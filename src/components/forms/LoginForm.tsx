@@ -50,7 +50,7 @@ export function LoginForm() {
         password: values.password,
       });
       localStorage.setItem("token", res.data.token);
-      router.push("/dashboard/clients");
+      router.push("/");
 
       console.log(values);
     } catch (error: unknown) {
